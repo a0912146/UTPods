@@ -41,5 +41,3 @@ int Song::get_total_songMemSize() {
 int Song::get_remaining_songMemSize() {
 
 }
-
-Song::~Song() {}
