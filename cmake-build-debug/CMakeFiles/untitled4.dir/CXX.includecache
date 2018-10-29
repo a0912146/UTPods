@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/atanz/CLionProjects/untitled4/Song.cpp
-string
--
-Song.h
-C:/Users/atanz/CLionProjects/untitled4/Song.h
-
 C:/Users/atanz/CLionProjects/untitled4/Song.h
 string
 -
@@ -19,22 +13,12 @@ string
 C:/Users/atanz/CLionProjects/untitled4/UTPod.cpp
 UTPod.h
 C:/Users/atanz/CLionProjects/untitled4/UTPod.h
+string
+-
+iostream
+-
 
 C:/Users/atanz/CLionProjects/untitled4/UTPod.h
 Song.h
 C:/Users/atanz/CLionProjects/untitled4/Song.h
-
-C:/Users/atanz/CLionProjects/untitled4/UtPod.h
-Song.h
-C:/Users/atanz/CLionProjects/untitled4/Song.h
-
-C:/Users/atanz/CLionProjects/untitled4/main.cpp
-cstdlib
--
-iostream
--
-Song.h
-C:/Users/atanz/CLionProjects/untitled4/Song.h
-UtPod.h
-C:/Users/atanz/CLionProjects/untitled4/UtPod.h
 

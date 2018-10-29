@@ -42,17 +42,6 @@ public:
 //and getting the remaining memory
     int get_songMemSize();
 
-//Function: get_total_songMemSize()
-//Input: No input
-//Description: Going to call the get_songMemsize() multiple times until the
-//linked list is NULL
-    int get_total_songMemSize();
-
-//Function: get_remaining_songMemSize()
-//Input: No input
-//Description: Going to call the get_songMemsize() multiple times until the
-//linked list is NULL
-    int get_remaining_songMemSize();
 
     bool operator == (const Song &);
     bool operator > (const Song &);

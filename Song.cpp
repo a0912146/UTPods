@@ -39,14 +39,6 @@ int Song::get_songMemSize() {
     return songMemSize;
 }
 
-int Song::get_total_songMemSize() {
-
-}
-
-int Song::get_remaining_songMemSize() {
-
-}
-
 bool Song::operator == (const Song &rhs){
     if(songTitle != rhs.songTitle){
         return false;
