@@ -1,33 +1,21 @@
 #include "UTPod.h"
 #include <string>
 #include <iostream>
+#include <stdlib.h>
+#include <stdio.h>
 using namespace std;
 
-UTPod::UTPod() {
-    static const int MAX_MEMORY = "";
-    static const int SUCCESS = "";
-    static const int NO_MEMORY = "";
-    static const int NOT_FOUND = "";
-}
+int UtPod::addSong(Song const &s){
+    SongNode *tempNode;
+    tempNode = new SongNode;
+    tempNode -> s;
+    tempNode -> next = NULL;
+    SongNode *Node;
 
-UTPod::UTPod(int size) {
-    static const int MAX_MEMORY = 512;
-    static const int SUCCESS = 0;
-    static const int NO_MEMORY = -1;
-    static const int NOT_FOUND = -2;
-}
-
-int UTPod::addSong(Song s){
-    if(s.get_songMemSize() > getRemainingMemory()){
+    if(tempNode->s.get_songMemSize() > getRemainingMemory()){
         return NO_MEMORY;
     }
     else{
-        SongNode *tempNode;
-        tempNode = new SongNode;
-        tempNode -> = s;
-        tempNode -> next = NULL;
-        SongNode *Node;
-
         if(songs==NULL){    //if the list is empty
             songs=tempNode;
         }
@@ -43,12 +31,12 @@ int UTPod::addSong(Song s){
     }
 }
 
-int UTPod::removeSong(Song s){
+int UtPod::removeSong(Song const &s){
     SongNode *tempNode = songs;
     SongNode *Node = NULL;
     while(tempNode->next!=NULL){
         if(tempNode->s == s){
-            if(tempNode == NULL){
+            if(tempNode->next == NULL){
                 songs = tempNode ->next;
             }
             else {
@@ -63,11 +51,31 @@ int UTPod::removeSong(Song s){
     return NOT_FOUND;
 }
 
-int UTPod::getRemainingMemory(){
+void UtPod::shuffle(){
+
+}
+
+void UtPod::showSongList(){
+    SongNode *tempNode;
+    tempNode=songs;
+    while(tempNode){
+        cout<< "Song Title: \n" << tempNode->s.get_songTitle() <<
+        "Song Artist: \n" << tempNode->s.get_songArtist() <<
+        "Song Memory Size:  \n" << tempNode->s.get_songMemSize() <<
+        endl;
+        tempNode = tempNode->next;
+   }
+}
+
+void UtPod::sortSongList(){
+
+}
+
+int UtPod::getRemainingMemory(){
     int Usedup;
     SongNode *tempNode = songs;
     while(tempNode->next!=NULL){
-        Usedup = Usedup + tempNode->s->songMemSize;
+        Usedup = Usedup + tempNode->s.get_songMemSize();
     }
     return (getTotalMemory() - Usedup);
 }

@@ -5,8 +5,7 @@
 #include "Song.h"
 
 //UtPod class declaration
-class UtPod
-{
+class UtPod {
 private:
     static const int MAX_MEMORY = 512;
     static const int SUCCESS = 0;

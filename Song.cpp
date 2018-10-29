@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 #include "Song.h"
 using namespace std;
 
@@ -82,4 +83,8 @@ bool Song::operator < (const Song &rhs){
     else{
         return false;
     }
+}
+
+Song::~Song() {
+    cout << "I'm in the destructor" << endl;
 }

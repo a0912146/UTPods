@@ -17,6 +17,10 @@ string
 -
 iostream
 -
+stdlib.h
+-
+stdio.h
+-
 
 C:/Users/atanz/CLionProjects/untitled4/UTPod.h
 Song.h
