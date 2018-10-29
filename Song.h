@@ -9,22 +9,22 @@ private:
 
 public:
     Song(); //constructor
-    Song(string SongTitle, string songArtist, int songMemSize);
+    Song(string Title, string Artist, int MemSize);
 
 //Function: insert_songTitle()
 //Input: Going to put a Song Title into the linked list
 //Output: No Output
-    void insert_songTitle(string);
+    void insert_songTitle(string Title);
 
 //Function: insert_songArtist()
 //Input: Going to put a Song Artist into the linked list
 //Output: No Output
-    void insert_songArtist(string);
+    void insert_songArtist(string Artist);
 
 //Function: insert_songMemSize()
 //Input: Going to put the Song Memory Size into the linked list
 //Output: No Output
-    void insert_songMemSize(int);
+    void insert_songMemSize(int MemSize);
 
 //Function: get_songTitle();
 //Input: No input
@@ -53,6 +53,10 @@ public:
 //Description: Going to call the get_songMemsize() multiple times until the
 //linked list is NULL
     int get_remaining_songMemSize();
+
+    bool operator == (const Song &);
+    bool operator > (const Song &);
+    bool operator < (const Song &);
 
     ~Song(); //destructor
 };
