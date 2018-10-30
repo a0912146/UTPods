@@ -44,6 +44,10 @@ int main(int argc, char *argv[])
     result = t.addSong(s5);
     cout << "add result = " << result << endl;
 
+    Song s6("Beatles", "Hey Jude6", 270);
+    result = t.addSong(s6);
+    cout << "add result = " << result << endl;
+
     t.showSongList();
 
     result = t.removeSong(s2);
@@ -63,11 +67,16 @@ int main(int argc, char *argv[])
     result = t.removeSong(s4);
     cout << "delete result = " << result << endl;
 
+    result = t.removeSong(s4);
+    cout << "delete result = " << result << endl;
 
     t.showSongList();
 
     result = t.addSong(s5);
     cout << "add result = " << result << endl;
+
+    result = t.removeSong(s4);
+    cout << "delete result = " << result << endl;
 
     t.showSongList();
     cout << "memory = " << t.getRemainingMemory() << endl;
