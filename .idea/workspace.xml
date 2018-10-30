@@ -14,14 +14,14 @@
     <list default="true" id="927b0fc1-aa86-42b9-a493-ebc43c77bb60" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Song.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Song.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UTPod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/UTPod.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/Song.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/Song.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/UTPod.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/UTPod.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/untitled4.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/untitled4.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/untitled4.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -36,41 +36,41 @@
     <session id="898610298">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="36" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="13" />
+          <entry key="project.closed" value="95" />
+          <entry key="project.open.time.4" value="6" />
+          <entry key="project.open.time.5" value="68" />
           <entry key="project.open.time.6" value="7" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="12" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="36" />
+          <entry key="project.opened" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="3932" />
-          <entry key="h" value="1548" />
+          <entry key="cpp" value="8998" />
+          <entry key="h" value="1618" />
           <entry key="txt" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="50" />
-          <entry key="ObjectiveC" value="5480" />
+          <entry key="ObjectiveC" value="10616" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="c" value="2" />
           <entry key="cpp" value="2" />
-          <entry key="h" value="9" />
-          <entry key="untitled4 (disassembly)" value="4" />
+          <entry key="h" value="13" />
+          <entry key="untitled4 (disassembly)" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Disassembly" value="4" />
-          <entry key="ObjectiveC" value="13" />
+          <entry key="Disassembly" value="24" />
+          <entry key="ObjectiveC" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -91,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UTPod.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="476">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -100,10 +100,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UTPod.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="115" column="73" selection-start-line="115" selection-start-column="73" selection-end-line="115" selection-end-column="73" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#118#222#0" />
+                <element signature="e#224#1131#0" />
+                <element signature="e#1133#2595#0" />
+                <element signature="e#2597#2622#0" />
+                <element signature="e#2624#3193#0" />
+                <element signature="e#3195#4308#0" />
+                <element signature="e#4310#4766#0" />
+                <element signature="e#4768#4865#0" />
               </folding>
             </state>
           </provider>
@@ -112,29 +120,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Song.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="1513">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86037">
-              <caret line="5061" selection-start-line="5061" selection-end-line="5061" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4454">
-              <caret line="262" selection-start-line="262" selection-end-line="262" />
             </state>
           </provider>
         </entry>
@@ -151,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="138">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="e#164#182#0" expanded="true" />
               </folding>
@@ -168,10 +158,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/UTPod.h" />
         <option value="$PROJECT_DIR$/Song.h" />
-        <option value="$PROJECT_DIR$/Song.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Song.cpp" />
+        <option value="$PROJECT_DIR$/UTPod.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/UTPod.cpp" />
       </list>
@@ -274,14 +264,74 @@
       <workItem from="1540865141876" duration="66000" />
       <workItem from="1540865223461" duration="77000" />
       <workItem from="1540865316211" duration="122000" />
+      <workItem from="1540865453725" duration="2445000" />
+      <workItem from="1540868044983" duration="119000" />
+      <workItem from="1540868179751" duration="219000" />
+      <workItem from="1540868414379" duration="111000" />
+      <workItem from="1540868541448" duration="35000" />
+      <workItem from="1540868591306" duration="117000" />
+      <workItem from="1540868723308" duration="330000" />
+      <workItem from="1540869068140" duration="358000" />
+      <workItem from="1540869441724" duration="308000" />
+      <workItem from="1540869765276" duration="1424000" />
+      <workItem from="1540871206564" duration="900000" />
+      <workItem from="1540872122723" duration="1802000" />
+      <workItem from="1540873945814" duration="188000" />
+      <workItem from="1540874150996" duration="355000" />
+      <workItem from="1540874522895" duration="596000" />
+      <workItem from="1540875135961" duration="66000" />
+      <workItem from="1540875217859" duration="175000" />
+      <workItem from="1540875408563" duration="224000" />
+      <workItem from="1540875647371" duration="143000" />
+      <workItem from="1540875806846" duration="265000" />
+      <workItem from="1540876089953" duration="232000" />
+      <workItem from="1540876338041" duration="52000" />
+      <workItem from="1540876404753" duration="32000" />
+      <workItem from="1540876452138" duration="314000" />
+      <workItem from="1540876782506" duration="683000" />
+      <workItem from="1540877481055" duration="354000" />
+      <workItem from="1540877853230" duration="274000" />
+      <workItem from="1540878143787" duration="131000" />
+      <workItem from="1540878291627" duration="225000" />
+      <workItem from="1540878532032" duration="419000" />
+      <workItem from="1540878966718" duration="147000" />
+      <workItem from="1540879129398" duration="813000" />
+      <workItem from="1540879958289" duration="1297000" />
+      <workItem from="1540881271627" duration="758000" />
+      <workItem from="1540882045733" duration="143000" />
+      <workItem from="1540882204757" duration="88000" />
+      <workItem from="1540882309684" duration="89000" />
+      <workItem from="1540882415296" duration="351000" />
+      <workItem from="1540882783239" duration="99000" />
+      <workItem from="1540882897143" duration="174000" />
+      <workItem from="1540883088532" duration="1074000" />
+      <workItem from="1540884178296" duration="58000" />
+      <workItem from="1540884251917" duration="103000" />
+      <workItem from="1540884370227" duration="348000" />
+      <workItem from="1540884733347" duration="682000" />
+      <workItem from="1540885432681" duration="379000" />
+      <workItem from="1540885827533" duration="40000" />
+      <workItem from="1540885882866" duration="61000" />
+      <workItem from="1540885958733" duration="224000" />
+      <workItem from="1540886197561" duration="473000" />
+      <workItem from="1540886690651" duration="59000" />
+      <workItem from="1540886765426" duration="315000" />
+      <workItem from="1540887096673" duration="425000" />
+      <workItem from="1540887537428" duration="223000" />
+      <workItem from="1540887775632" duration="367000" />
+      <workItem from="1540888159533" duration="106000" />
+      <workItem from="1540888281919" duration="78000" />
+      <workItem from="1540888375332" duration="61000" />
+      <workItem from="1540888451703" duration="43000" />
+      <workItem from="1540888510919" duration="334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26361000" />
+    <option name="totallyTimeSpent" value="48669000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="676" y="0" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27315542" />
@@ -290,15 +340,15 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3344426" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39016393" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.049916804" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.33770493" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.31639344" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3294509" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32786885" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3294509" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -317,13 +367,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>72</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>66</line>
-          <option name="timeStamp" value="20" />
+          <line>52</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -342,23 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Song.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86037">
@@ -373,6 +401,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UTPod.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Song.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Song.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -382,27 +434,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="138">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#164#182#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UTPod.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UTPod.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="243">
+          <caret line="115" column="73" selection-start-line="115" selection-start-column="73" selection-end-line="115" selection-end-column="73" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#118#222#0" />
+            <element signature="e#224#1131#0" />
+            <element signature="e#1133#2595#0" />
+            <element signature="e#2597#2622#0" />
+            <element signature="e#2624#3193#0" />
+            <element signature="e#3195#4308#0" />
+            <element signature="e#4310#4766#0" />
+            <element signature="e#4768#4865#0" />
           </folding>
         </state>
       </provider>

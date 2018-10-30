@@ -57,21 +57,6 @@ bool Song::operator == (const Song &rhs){
 
 bool Song::operator > (const Song &rhs){
     if(songTitle != rhs.songTitle){
-        return (songTitle > rhs.songTitle);
-    }
-    if(songArtist != rhs.songArtist){
-        return (songArtist > rhs.songArtist);
-    }
-    if(songMemSize != rhs.songMemSize){
-        return (songMemSize > rhs.songMemSize);
-    }
-    else{
-        return false;
-    }
-}
-
-bool Song::operator < (const Song &rhs){
-    if(songTitle != rhs.songTitle){
         return (songTitle < rhs.songTitle);
     }
     if(songArtist != rhs.songArtist){
@@ -81,7 +66,22 @@ bool Song::operator < (const Song &rhs){
         return (songMemSize < rhs.songMemSize);
     }
     else{
-        return false;
+        return false;   //they are equal to each other
+    }
+}
+
+bool Song::operator < (const Song &rhs){
+    if(songTitle != rhs.songTitle){
+        return (songTitle > rhs.songTitle);
+    }
+    if(songArtist != rhs.songArtist){
+        return (songArtist > rhs.songArtist);
+    }
+    if(songMemSize != rhs.songMemSize){
+        return (songMemSize > rhs.songMemSize);
+    }
+    else{
+        return false;   //they are equal to each other
     }
 }
 
