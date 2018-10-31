@@ -11,21 +11,6 @@ public:
     Song(); //constructor
     Song(string Title, string Artist, int MemSize);
 
-//Function: insert_songTitle()
-//Input: Going to put a Song Title into the linked list
-//Output: No Output
-    void insert_songTitle(string Title);
-
-//Function: insert_songArtist()
-//Input: Going to put a Song Artist into the linked list
-//Output: No Output
-    void insert_songArtist(string Artist);
-
-//Function: insert_songMemSize()
-//Input: Going to put the Song Memory Size into the linked list
-//Output: No Output
-    void insert_songMemSize(int MemSize);
-
 //Function: get_songTitle();
 //Input: No input
 //Description: Going to get the Song Title for further switch function

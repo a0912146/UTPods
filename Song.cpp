@@ -16,18 +16,6 @@ Song::Song(string Title, string Artist, int MemSize) {
     songMemSize=MemSize;
 }
 
-void Song::insert_songTitle(string Title) {
-    songTitle=Title;
-}
-
-void Song::insert_songArtist(string Artist) {
-    songArtist=Artist;
-}
-
-void Song::insert_songMemSize(int MemSize) {
-    songMemSize=MemSize;
-}
-
 string Song::get_songTitle() {
     return songTitle;
 }
