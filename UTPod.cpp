@@ -99,7 +99,15 @@ int UtPod::removeSong(Song const &s){
 }
 
 void UtPod::shuffle(){
+    SongNode *generalPointer=NULL;
+    SongNode *secondPointer=NULL;
+    SongNode *tempSongs=songs;
+    SongNode *head=songs;
 
+    srand(5);
+    /* Seed = 5 */
+    random = rand();
+    cout << "Seed = 5, Random number = " << random << endl;
 }
 
 //Function showSongList():
@@ -151,8 +159,6 @@ Song UtPod:: update_songs_helper_function(Song lowest_song, SongNode *traversePt
     return lowest_song;
 }
 
-
-
 //Function sortSongList()
 //Input Parameter: No Input Parameters
 //Output Parameter: No Output Parameters
@@ -165,8 +171,7 @@ void UtPod::sortSongList() {
     SongNode *head;
 
     // Going to find the lowest song in the list currently
-    while (traversePtr != NULL) {
-        while (traversePtr->next != NULL) {
+        while (traversePtr != NULL) {
             lowest_song = lowest_song_helper_function(traversePtr, lowest_song);
 
             // Going to add the lowest element into the temporary buffer
@@ -188,10 +193,10 @@ void UtPod::sortSongList() {
             }
 
             removeSong(lowest_song);    // Removes the lowest song from the general songs list so can find new lowest value
+            traversePtr = songs;
             lowest_song = update_songs_helper_function(lowest_song, traversePtr);
         }
-        traversePtr = songs;
-    }
+
     songs = head;
 }
 
