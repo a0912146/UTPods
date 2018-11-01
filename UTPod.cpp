@@ -160,9 +160,9 @@ Song UtPod:: update_songs_helper_function(Song lowest_song, SongNode *traversePt
 void UtPod::sortSongList() {
     SongNode *traversePtr = songs;  // head pointer
     SongNode *copy_Tempt = NULL;    // Using as temporary buffer that will later go into songs
-    SongNode *traversePtr2;
 
     Song lowest_song = traversePtr->s;
+    SongNode *head;
 
     // Going to find the lowest song in the list currently
     while (traversePtr != NULL) {
@@ -173,23 +173,26 @@ void UtPod::sortSongList() {
             SongNode *Tempt = new SongNode;
             Tempt->s = lowest_song;
             Tempt->next = NULL;
-            traversePtr2 = copy_Tempt;
+            SongNode *traversePtr2;
+
             if (copy_Tempt != NULL) {
+                traversePtr2 = copy_Tempt;
                 while(traversePtr2->next != NULL) {
                     traversePtr2 = traversePtr2->next;
                 }
-                copy_Tempt->next = Tempt;
-
+                traversePtr2->next = Tempt;
+                copy_Tempt = copy_Tempt->next;
             } else {
                 copy_Tempt = Tempt;
+                head = copy_Tempt;
             }
 
             removeSong(lowest_song);    // Removes the lowest song from the general songs list so can find new lowest value
             lowest_song = update_songs_helper_function(lowest_song, traversePtr);
         }
+        traversePtr = songs;
     }
-
-    songs = copy_Tempt;
+    songs = head;
 }
 
 //Function getRemainingMemory():
