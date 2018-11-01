@@ -3,6 +3,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 using namespace std;
 
 //Constructor for the UTPod
@@ -99,15 +100,35 @@ int UtPod::removeSong(Song const &s){
 }
 
 void UtPod::shuffle(){
-    SongNode *generalPointer=NULL;
-    SongNode *secondPointer=NULL;
+    SongNode *storage;
     SongNode *tempSongs=songs;
-    SongNode *head=songs;
+    SongNode *head =  songs;
 
-    srand(5);
-    /* Seed = 5 */
-    random = rand();
-    cout << "Seed = 5, Random number = " << random << endl;
+    srand(10);
+    int random_number = rand();
+
+
+    while(head != NULL){
+        while (tempSongs != NULL) {
+            tempSongs = tempSongs->next;
+            random_number--;
+            if(random_number == 0){
+                Song tempVariable = tempSongs ->s;
+                SongNode *Tempt = new SongNode;
+                Tempt->s = tempVariable;
+                Tempt->next = NULL;
+
+                storage = Tempt;
+                storage = storage->next;
+                removeSong(tempVariable);
+            }
+            else{
+                random_number =rand();
+            }
+        }
+        tempSongs = head;
+    }
+    songs = storage;
 }
 
 //Function showSongList():
