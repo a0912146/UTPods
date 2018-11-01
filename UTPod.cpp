@@ -30,12 +30,12 @@ int UtPod::addSong(Song const &s){
         return NO_MEMORY;
     }
     else{
-        if(songs==NULL){    //if the list is empty
+        if(songs == NULL){    //if the list is empty
             songs=tempNode;
         }
-        else{
+        else {
             Node=songs; // Head pointer
-            while(Node->next) {
+            while(Node->next != NULL) {
                 Node = Node->next;
             }
 
@@ -55,9 +55,13 @@ int UtPod::removeSong(Song const &s){
     SongNode *tempNode = songs;
     SongNode *Node = NULL;
     int first_element_encountered_flag=0;
+
+
     if(tempNode==NULL){ //List is empty
         return NOT_FOUND;
     }
+
+
     while(tempNode->next!=NULL){
         if(tempNode->s == s){
 //First element is going to be deleted from song list
@@ -77,6 +81,8 @@ int UtPod::removeSong(Song const &s){
         Node = tempNode;
         tempNode = tempNode -> next;
     }
+
+
 //last element is going to be deleted from song list
     if(tempNode->s == s){
         if(first_element_encountered_flag==0){
@@ -113,49 +119,76 @@ void UtPod::showSongList(){
    }
 }
 
+//Function lowest_song_helper_function():
+//Input Parameter: the SongNode that is going to traverse through songs, the comparator for the lowest song
+//Output Parameter: the lowest song that is currently in the list
+// Definition: Finds the lowest song in the function
+Song UtPod:: lowest_song_helper_function(SongNode *traversePtr, Song lowest_song){
+// Going to the find the lowest song in the list currently
+    traversePtr=songs;
+        while (traversePtr->next != NULL) {
+            if (lowest_song<traversePtr->next->s) {
+                lowest_song = traversePtr->next->s;
+                traversePtr = traversePtr->next;
+            }
+            else {
+                traversePtr = traversePtr->next;
+            }
+        }
+        return lowest_song;
+    }
+
+//Function update_songs_helper_function():
+//Input Parameter: the SongNode that is going to traverse through songs, the comparator for the lowest song
+//                 and the SongNode linked list with the updated ascending order of songs
+//Output Parameter: the lowest song that is currently found
+//Definition: Will update songs with the ascending order of songs
+Song UtPod:: update_songs_helper_function(Song lowest_song, SongNode *traversePtr){
+    if (songs != NULL) {
+        lowest_song = traversePtr->s;
+    }
+    songs = traversePtr;
+    return lowest_song;
+}
+
+
+
 //Function sortSongList()
 //Input Parameter: No Input Parameters
 //Output Parameter: No Output Parameters
 //Definition: Going to sort the list from a-z order (smallest to largest)
-void UtPod::sortSongList(){
-    SongNode *traversePtr = songs;  // Going to go through the list
+void UtPod::sortSongList() {
+    SongNode *traversePtr = songs;  // head pointer
     SongNode *copy_Tempt = NULL;    // Using as temporary buffer that will later go into songs
-    SongNode *secondtraversePTR;    // Used when adding song to the temporary buffer
-    Song lowest_song = traversePtr->s;
-    int song_num = 0;
-    // Going to the find the lowest song in the list currently
-    while(songs){
-        while(traversePtr->next!=NULL){
-            if(lowest_song < traversePtr->next->s) {
-                lowest_song = traversePtr->next->s;
-                traversePtr=traversePtr->next;
-            }
-            else{
-                traversePtr=traversePtr->next;
-            }
-        }
-        song_num++;
-    // Going to add the lowest element into the temporary buffer
-        SongNode *Tempt=new SongNode;
-        Tempt->s = lowest_song;
-        Tempt->next = NULL;
+    SongNode *traversePtr2;
 
-        if(copy_Tempt!=NULL){
-            secondtraversePTR = copy_Tempt;
-            for(song_num=song_num-1; song_num!=0; song_num--){
-                secondtraversePTR = secondtraversePTR->next;
+    Song lowest_song = traversePtr->s;
+
+    // Going to find the lowest song in the list currently
+    while (traversePtr != NULL) {
+        while (traversePtr->next != NULL) {
+            lowest_song = lowest_song_helper_function(traversePtr, lowest_song);
+
+            // Going to add the lowest element into the temporary buffer
+            SongNode *Tempt = new SongNode;
+            Tempt->s = lowest_song;
+            Tempt->next = NULL;
+            traversePtr2 = copy_Tempt;
+            if (copy_Tempt != NULL) {
+                while(traversePtr2->next != NULL) {
+                    traversePtr2 = traversePtr2->next;
+                }
+                copy_Tempt->next = Tempt;
+
+            } else {
+                copy_Tempt = Tempt;
             }
-            secondtraversePTR->next = Tempt;
-        }
-        else{
-            copy_Tempt = Tempt;
-        }
-        removeSong(lowest_song);    // Removes the lowest song from the general songs list so can find new lowest value
-        traversePtr=songs;
-        if(songs!=NULL) {
-            lowest_song = traversePtr->s;
+
+            removeSong(lowest_song);    // Removes the lowest song from the general songs list so can find new lowest value
+            lowest_song = update_songs_helper_function(lowest_song, traversePtr);
         }
     }
+
     songs = copy_Tempt;
 }
 

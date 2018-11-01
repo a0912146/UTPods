@@ -30,6 +30,8 @@ public:
     int removeSong(Song const &s);
     void shuffle();
     void showSongList();
+    Song lowest_song_helper_function(SongNode *traversePtr, Song lowest_song);
+    Song update_songs_helper_function(Song lowest_song, SongNode *traversePtr);
     void sortSongList();
 
     int getTotalMemory() {

@@ -10,15 +10,19 @@ C:/Users/atanz/CLionProjects/untitled4/Song.h
 string
 -
 
-C:/Users/atanz/CLionProjects/untitled4/UtPod.h
-Song.h
-C:/Users/atanz/CLionProjects/untitled4/Song.h
-
-C:/Users/atanz/CLionProjects/untitled4/main.cpp
-cstdlib
+C:/Users/atanz/CLionProjects/untitled4/UTPod.cpp
+UTPod.h
+C:/Users/atanz/CLionProjects/untitled4/UTPod.h
+string
 -
 iostream
 -
-UtPod.h
-C:/Users/atanz/CLionProjects/untitled4/UtPod.h
+stdlib.h
+-
+stdio.h
+-
+
+C:/Users/atanz/CLionProjects/untitled4/UTPod.h
+Song.h
+C:/Users/atanz/CLionProjects/untitled4/Song.h
 
