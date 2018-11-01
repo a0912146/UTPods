@@ -56,7 +56,7 @@ int UtPod::removeSong(Song const &s){
     SongNode *tempNode = songs;
     SongNode *Node = NULL;
     int first_element_encountered_flag=0;
-
+    SongNode *finalNode = tempNode;
 
     if(tempNode==NULL){ //List is empty
         return NOT_FOUND;
@@ -92,43 +92,66 @@ int UtPod::removeSong(Song const &s){
             return SUCCESS;
         }
         Node->next = NULL;
-        songs=Node;
+        songs=finalNode;
         delete tempNode;
         return SUCCESS;
     }
     return NOT_FOUND;
 }
 
+//Function shuffle():
+//Input Parameters: No input parameters
+//Output Parameters: No output parameters
+//Definition: Function will go through songs list using a random number generator and iterate over the song list
+//again and again until the random number hits zero. It will take the song that corresponds with the random number and
+//place that in the list until the list of songs is complete.
 void UtPod::shuffle(){
-    SongNode *storage;
+    SongNode *storage=NULL;
     SongNode *tempSongs=songs;
-    SongNode *head =  songs;
-
-    srand(10);
+    SongNode *traversePTR;
+    SongNode *head;
+    srand(time(0));
     int random_number = rand();
+    int first_flag=0;
 
-
-    while(head != NULL){
+    while(songs != NULL){
         while (tempSongs != NULL) {
             tempSongs = tempSongs->next;
             random_number--;
             if(random_number == 0){
-                Song tempVariable = tempSongs ->s;
+                Song tempVariable;
+                if(tempSongs != NULL) {
+                    tempVariable = tempSongs->s;
+                }
+                else{
+                    tempSongs = songs;
+                    tempVariable = tempSongs->s;
+                }
                 SongNode *Tempt = new SongNode;
                 Tempt->s = tempVariable;
                 Tempt->next = NULL;
+                if(first_flag==1) {
+                    traversePTR = storage;
+                    while (traversePTR->next != NULL) {
+                        traversePTR = traversePTR->next;
+                    }
+                    traversePTR->next = Tempt;
+                    storage = storage->next;
+                }
+                else{
+                    first_flag = 1;
+                    storage = Tempt;
+                    head = storage;
+                }
 
-                storage = Tempt;
-                storage = storage->next;
                 removeSong(tempVariable);
-            }
-            else{
                 random_number =rand();
+                tempSongs=songs;
             }
         }
-        tempSongs = head;
+        tempSongs = songs;
     }
-    songs = storage;
+    songs = head;
 }
 
 //Function showSongList():
