@@ -7,8 +7,8 @@
 using namespace std;
 
 //Constructor for the UTPod
-UtPod::UtPod() {
-    memSize=MAX_MEMORY;
+UtPod::UtPod(int size) {
+    memSize=size;
     songs= NULL; //Make head null
 }
 
@@ -262,7 +262,5 @@ int UtPod::getRemainingMemory() {
 }
 
 //Deconstructor for the UTPod
-UtPod::~UtPod() {
-    cout << "I'm in the UT destructor" << endl;
-}
+UtPod::~UtPod() {}
 

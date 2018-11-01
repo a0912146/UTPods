@@ -1,3 +1,9 @@
+// prog05_ta9965
+// Tanzim Ahmed
+// Song.h
+// Going to implement the functions related to the songs including comparing songs to each other and getting
+// the variable information for later usage.
+
 #include <string>
 using namespace std;
 

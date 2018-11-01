@@ -1,24 +1,19 @@
 /* utPod_driver.cpp
 Demo Driver for the UtPod.
 
-Roger Priebe
-EE 312 10/16/18
-
-This is a basic driver for the UtPod.
-
-You will want to do more complete testing.
+Tanzim Ahmed
+EE 312 11/1/18
 
 */
 #include <cstdlib>
 #include <iostream>
-#include "UtPod.h"
-
-
+#include "UTPod.h"
+#include "stdlib.h"
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    UtPod t;
+    UtPod t(525);
 
     Song s1("Beatles", "Hey Jude1", 5);
     int result = t.addSong(s1);

@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/atanz/CLionProjects/untitled4/Song.cpp
+string
+-
+iostream
+-
+Song.h
+C:/Users/atanz/CLionProjects/untitled4/Song.h
+
 C:/Users/atanz/CLionProjects/untitled4/Song.h
 string
 -
@@ -27,4 +35,14 @@ time.h
 C:/Users/atanz/CLionProjects/untitled4/UTPod.h
 Song.h
 C:/Users/atanz/CLionProjects/untitled4/Song.h
+
+C:/Users/atanz/CLionProjects/untitled4/main.cpp
+cstdlib
+-
+iostream
+-
+UTPod.h
+C:/Users/atanz/CLionProjects/untitled4/UTPod.h
+stdlib.h
+C:/Users/atanz/CLionProjects/untitled4/stdlib.h
 

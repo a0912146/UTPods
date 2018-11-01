@@ -1,4 +1,9 @@
-//DOCUMENT HERE
+// prog05_ta9965
+// Tanzim Ahmed
+// UTPod.h
+// This is going to implement the UTPOD functions related to music devices like
+//shuffling, sorting, adding songs, removing songs, and seeing how much memory is
+//left.
 
 #ifndef UTPOD_H
 #define UTPOD_H

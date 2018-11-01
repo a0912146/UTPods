@@ -73,6 +73,4 @@ bool Song::operator < (const Song &rhs){
     }
 }
 
-Song::~Song() {
-    cout << "I'm in the destructor" << endl;
-}
+Song::~Song() {}

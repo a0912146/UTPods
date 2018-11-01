@@ -9,6 +9,6 @@ CMakeFiles/untitled4.dir/UTPod.cpp.obj: ../UTPod.cpp
 CMakeFiles/untitled4.dir/UTPod.cpp.obj: ../UTPod.h
 
 CMakeFiles/untitled4.dir/main.cpp.obj: ../Song.h
-CMakeFiles/untitled4.dir/main.cpp.obj: ../UtPod.h
+CMakeFiles/untitled4.dir/main.cpp.obj: ../UTPod.h
 CMakeFiles/untitled4.dir/main.cpp.obj: ../main.cpp
 
